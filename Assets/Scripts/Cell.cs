@@ -9,14 +9,17 @@ public class Cell : MonoBehaviour,IUsable
     [SerializeField] private Color[] m_colors;
     [SerializeField] private Color m_baseColor;
     [SerializeField] private Vector2 m_position;
-
+    private bool m_isUsed;
+    public bool IsUsed { get { return m_isUsed; } }
     void Awake()
     {
+        m_isUsed = false;
         m_Position = m_position;
         m_renderer = GetComponent<Renderer>();
     }
     public CellAtribute SetSymbol(int player)
-    {   
+    {
+        m_isUsed = true;
         CellAtribute cellAtribute = new CellAtribute();
         cellAtribute.position = m_position;
         cellAtribute.player = player;
@@ -31,6 +34,7 @@ public class Cell : MonoBehaviour,IUsable
     public void SetBase()
     {
         m_renderer.material.color = m_baseColor;
+        m_isUsed = false;
     }
 
 }

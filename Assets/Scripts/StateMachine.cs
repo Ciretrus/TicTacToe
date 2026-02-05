@@ -37,11 +37,12 @@ public class StateMachine : MonoBehaviour
         {
 
             case GameState.Menu:
+                m_winCondition.ResetData();
                 m_menu.SetActive(true);
                 m_gameOver.SetActive(false);
                 m_playerController.gameObject.SetActive(false);
                 m_winCondition.gameObject.SetActive(false);
-
+                print("Menu");
                 break;
 
             case GameState.Playing:
@@ -50,10 +51,11 @@ public class StateMachine : MonoBehaviour
                 if (m_playerCounter > m_playerCount) m_playerCounter = 1;
                 m_playerController.gameObject.SetActive(true);
                 m_winCondition.gameObject.SetActive(false);
-
+                print("Playing");
                 break;
 
             case GameState.Checking:
+                print("Checking");
                 m_playerController.gameObject.SetActive(false);
                 m_winCondition.gameObject.SetActive(true);
                 int winner = m_winCondition.Check();
@@ -73,6 +75,8 @@ public class StateMachine : MonoBehaviour
                 break;
 
             case GameState.GameOver:
+                
+                print("GameOver");
                 m_menu.SetActive(false);
                 m_gameOver.SetActive(true);
                 m_playerController.gameObject.SetActive(false);

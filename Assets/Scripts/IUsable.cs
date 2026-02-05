@@ -11,4 +11,5 @@ public struct CellAtribute
 interface IUsable
 {
     public CellAtribute SetSymbol(int player);
+    public bool IsUsed {  get; }
 } 

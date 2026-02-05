@@ -18,54 +18,62 @@ public class WinCondition : MonoBehaviour
     }
     public int Check() 
     {
+        int lineIDPlayer =0;
         int winPlayer = 0;
         for (int x = 0; x < m_cellGrid; x++)
         {   
-            int lineIDPlayer = m_cellConditions[x,0];
+            lineIDPlayer = m_cellConditions[x,0];
+            if (lineIDPlayer == 0) continue;
             winPlayer = lineIDPlayer;
             for (int y = 0; y < m_cellGrid; y++)
             {
-                if (lineIDPlayer != m_cellConditions[x, y] || lineIDPlayer == 0)
+                if (lineIDPlayer != m_cellConditions[x, y])
                 {
                     winPlayer = 0;
                     break;
                 }
             }
-                
-        }
+            if (winPlayer != 0) { return winPlayer; }
 
+        }
+        if (winPlayer != 0) { return winPlayer; }
         for (int y = 0; y < m_cellGrid; y++)
         {
-            int lineIDPlayer = m_cellConditions[0, y];
+            lineIDPlayer = m_cellConditions[0, y];
+            if (lineIDPlayer == 0) continue;
             winPlayer = lineIDPlayer;
             for (int x = 0; x < m_cellGrid; x++)
             {
-                if (lineIDPlayer != m_cellConditions[x, y] || lineIDPlayer == 0)
+                if (lineIDPlayer != m_cellConditions[x, y])
                 {
                     winPlayer = 0;
                     break;
                 }
             }
+            if (winPlayer!=0) { return winPlayer; }
 
         }
-
+        if (winPlayer != 0) { return winPlayer; }
         for (int i = 0; i < m_cellGrid; i++)
         {
-            int lineIDPlayer = m_cellConditions[0, 0];
+            lineIDPlayer = m_cellConditions[0, 0];
+            if (lineIDPlayer == 0) continue;
             winPlayer = lineIDPlayer;
-            if (lineIDPlayer != m_cellConditions[i, i] || lineIDPlayer == 0)
+            if (lineIDPlayer != m_cellConditions[i, i])
             {
                 winPlayer = 0;
                 break;
             }
 
         }
-
+        if (winPlayer != 0) { return winPlayer; }
+        
         for (int i = 0; i < m_cellGrid; i++)
         {
-            int lineIDPlayer = m_cellConditions[i, 0];
+            lineIDPlayer = m_cellConditions[m_cellGrid - 1, 0];
+            if (lineIDPlayer == 0) continue;
             winPlayer = lineIDPlayer;
-            if (lineIDPlayer != m_cellConditions[m_cellGrid-i-1, i] || lineIDPlayer == 0)
+            if (lineIDPlayer != m_cellConditions[m_cellGrid-i-1, i])
             {
                 winPlayer = 0;
                 break;
@@ -76,7 +84,7 @@ public class WinCondition : MonoBehaviour
         return winPlayer;
     }
 
-    private void OnDisable()
+    public void ResetData()
     {
         foreach (var cell in m_cells)
         {
