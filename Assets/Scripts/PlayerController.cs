@@ -1,25 +1,14 @@
 using UnityEngine;
 
 
-
-
-public enum GameState
-{
-    Menu,
-    Playing,
-    Checking,
-    GameOver
-}
-
-
-
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Camera m_camera;
     [SerializeField] private float m_rayDistance = 100f;
-    [SerializeField] private
-
+    [SerializeField] private WinCondition m_winCondition;
     
+
+
     void Start()
     {
         
@@ -36,11 +25,14 @@ public class PlayerController : MonoBehaviour
         {
             if (hit.collider.TryGetComponent(out IUsable usable))
             {
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && StateMachine.Instance.m_GameState == GameState.Playing )
                 {
-                        usable.SetSymbol(1);
+                    usable.SetSymbol(StateMachine.Instance.m_playerCounter);
+                    m_winCondition.AddUsedCell()
                 }
             }
         }
     }
+
+    void 
 }
