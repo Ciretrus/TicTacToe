@@ -1,13 +1,14 @@
 using System;
 using UnityEngine;
 using UnityEngine.UIElements;
-public struct Cell
+public struct CellAtribute
 {
     public Vector2 position;
     public int player;
 }
 
+
 interface IUsable
 {
-    void SetSymbol(Cell cell);
+    public CellAtribute SetSymbol(int player);
 } 
