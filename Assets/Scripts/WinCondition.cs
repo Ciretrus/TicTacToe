@@ -1,21 +1,90 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class WinCondition : MonoBehaviour
-{
-    [SerializeField] private Cell[] cells;
+{  
     
+    [SerializeField] private Cell[] m_cells;
+    [SerializeField] private int m_cellGrid = 3;
+    private int[,] m_cellConditions;
     
-    public void Check() 
+
+    private void Awake()
     {
-        
+        m_cellConditions = new int[m_cellGrid, m_cellGrid];
+    }
+    public int Check() 
+    {
+        int winPlayer = 0;
+        for (int x = 0; x < m_cellGrid; x++)
+        {   
+            int lineIDPlayer = m_cellConditions[x,0];
+            winPlayer = lineIDPlayer;
+            for (int y = 0; y < m_cellGrid; y++)
+            {
+                if (lineIDPlayer != m_cellConditions[x, y])
+                {
+                    winPlayer = 0;
+                    break;
+                }
+            }
+                
+        }
+
+        for (int y = 0; y < m_cellGrid; y++)
+        {
+            int lineIDPlayer = m_cellConditions[0, y];
+            winPlayer = lineIDPlayer;
+            for (int x = 0; x < m_cellGrid; x++)
+            {
+                if (lineIDPlayer != m_cellConditions[x, y])
+                {
+                    winPlayer = 0;
+                    break;
+                }
+            }
+
+        }
+
+        for (int i = 0; i < m_cellGrid; i++)
+        {
+            int lineIDPlayer = m_cellConditions[0, 0];
+            winPlayer = lineIDPlayer;
+            if (lineIDPlayer != m_cellConditions[i, i])
+            {
+                winPlayer = 0;
+                break;
+            }
+
+        }
+
+        for (int i = 0; i < m_cellGrid; i++)
+        {
+            int lineIDPlayer = m_cellConditions[i, 0];
+            winPlayer = lineIDPlayer;
+            if (lineIDPlayer != m_cellConditions[m_cellGrid-i, i])
+            {
+                winPlayer = 0;
+                break;
+            }
+
+        }
+
+        return winPlayer;
     }
 
     private void OnDisable()
     {
-        foreach (var cell in cells)
+        foreach (var cell in m_cells)
         {
             cell.SetBase();
         }
+    }
+    public void AddUsedCell(CellAtribute cell)
+    {
+        int x = (int)cell.position.x;
+        int y = (int)cell.position.y;
+        m_cellConditions[x, y] = cell.player;
     }
 
 }

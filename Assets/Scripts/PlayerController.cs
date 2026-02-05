@@ -27,8 +27,8 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0) && StateMachine.Instance.m_GameState == GameState.Playing )
                 {
-                    usable.SetSymbol(StateMachine.Instance.m_playerCounter);
-                    m_winCondition.AddUsedCell()
+                    var cell = usable.SetSymbol(StateMachine.Instance.m_playerCounter);
+                    m_winCondition.AddUsedCell(cell);
                 }
             }
         }

@@ -21,7 +21,7 @@ public class Cell : MonoBehaviour,IUsable
         cellAtribute.position = m_position;
         cellAtribute.player = player;
 
-        m_renderer.material.color = m_colors[player];
+        m_renderer.material.color = m_colors[player-1];
 
         Debug.Log($"cell {m_position} player {player}");
 
