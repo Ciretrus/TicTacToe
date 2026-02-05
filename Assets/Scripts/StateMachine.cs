@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class StateMachine : MonoBehaviour
 {
+
     void Start()
     {
         
     }
-
+    
     void Update()
     {
         
