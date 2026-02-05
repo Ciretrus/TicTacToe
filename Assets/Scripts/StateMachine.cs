@@ -16,7 +16,7 @@ public class StateMachine : MonoBehaviour
     [SerializeField] private int m_playerCount;
     [SerializeField] private GameObject m_menu;
     [SerializeField] private GameObject m_gameOver;
-    [SerializeField] private PlayerController m_payerController;
+    [SerializeField] private PlayerController m_playerController;
     [SerializeField] private WinCondition m_winCondition;
     [SerializeField] private TMP_Text m_Winner;
 
@@ -42,27 +42,36 @@ public class StateMachine : MonoBehaviour
                 break;
 
             case GameState.Playing:
-                if (m_playerCounter > m_playerCount) m_playerCounter = 1;
                 m_playerCounter++;
-                m_payerController.gameObject.SetActive(true);
+                if (m_playerCounter > m_playerCount) m_playerCounter = 1;
+                m_playerController.gameObject.SetActive(true);
                 m_winCondition.gameObject.SetActive(false);
 
                 break;
 
             case GameState.Checking:
-                m_payerController.gameObject.SetActive(false);
+                m_playerController.gameObject.SetActive(false);
                 m_winCondition.gameObject.SetActive(true);
                 int winner = m_winCondition.Check();
                 if (winner != 0)
                 { 
                     m_Winner.text = "Winner player - " + winner;
+                    ChangeState(GameState.GameOver);
+                    return;
                 }
+                else if (m_winCondition.isMovesEnd)
+                {
+                    m_Winner.text = "TIE";
+                    ChangeState(GameState.GameOver);
+                    return;
+                }
+                ChangeState(GameState.Playing);
                 break;
 
             case GameState.GameOver:
                 m_menu.SetActive(false);
                 m_gameOver.SetActive(true);
-                m_payerController.gameObject.SetActive(false);
+                m_playerController.gameObject.SetActive(false);
                 m_winCondition.gameObject.SetActive(false);
                 break;
 

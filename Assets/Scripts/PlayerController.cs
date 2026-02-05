@@ -29,10 +29,10 @@ public class PlayerController : MonoBehaviour
                 {
                     var cell = usable.SetSymbol(StateMachine.Instance.m_playerCounter);
                     m_winCondition.AddUsedCell(cell);
+                    StateMachine.Instance.ChangeState(GameState.Checking);
                 }
             }
         }
     }
 
-    void 
 }
