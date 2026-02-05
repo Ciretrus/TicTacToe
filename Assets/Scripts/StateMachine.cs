@@ -27,6 +27,7 @@ public class StateMachine : MonoBehaviour
     {
         Instance = this;
         m_playerCounter = 1;
+        ChangeState(GameState.Menu);
     }
 
     public void ChangeState(GameState state)
@@ -38,10 +39,13 @@ public class StateMachine : MonoBehaviour
             case GameState.Menu:
                 m_menu.SetActive(true);
                 m_gameOver.SetActive(false);
+                m_playerController.gameObject.SetActive(false);
+                m_winCondition.gameObject.SetActive(false);
 
                 break;
 
             case GameState.Playing:
+                m_menu.SetActive(false);
                 m_playerCounter++;
                 if (m_playerCounter > m_playerCount) m_playerCounter = 1;
                 m_playerController.gameObject.SetActive(true);

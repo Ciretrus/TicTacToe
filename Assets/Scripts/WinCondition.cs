@@ -65,7 +65,7 @@ public class WinCondition : MonoBehaviour
         {
             int lineIDPlayer = m_cellConditions[i, 0];
             winPlayer = lineIDPlayer;
-            if (lineIDPlayer != m_cellConditions[m_cellGrid-i, i] || lineIDPlayer == 0)
+            if (lineIDPlayer != m_cellConditions[m_cellGrid-i-1, i] || lineIDPlayer == 0)
             {
                 winPlayer = 0;
                 break;
