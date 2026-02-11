@@ -511,7 +511,7 @@ MonoBehaviour:
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
-  m_baseColor: {r: 1, g: 0.9318118, b: 0, a: 0}
+  m_baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_position: {x: 1, y: 1}
 --- !u!65 &506870384
 BoxCollider:
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
-  m_baseColor: {r: 1, g: 0.9318118, b: 0, a: 0}
+  m_baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_position: {x: 2, y: 1}
 --- !u!65 &619048308
 BoxCollider:
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
-  m_baseColor: {r: 1, g: 0.9318118, b: 0, a: 0}
+  m_baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_position: {x: 0, y: 1}
 --- !u!65 &776170258
 BoxCollider:
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
-  m_baseColor: {r: 1, g: 0.9318118, b: 0, a: 0}
+  m_baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_position: {x: 0, y: 2}
 --- !u!65 &929745552
 BoxCollider:
@@ -1302,7 +1302,7 @@ MonoBehaviour:
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
-  m_baseColor: {r: 1, g: 0.9318118, b: 0, a: 0}
+  m_baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_position: {x: 1, y: 0}
 --- !u!65 &1150881794
 BoxCollider:
@@ -1431,7 +1431,7 @@ MonoBehaviour:
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
-  m_baseColor: {r: 1, g: 0.9318118, b: 0, a: 0}
+  m_baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_position: {x: 2, y: 0}
 --- !u!65 &1327299310
 BoxCollider:
@@ -1819,7 +1819,7 @@ MonoBehaviour:
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
-  m_baseColor: {r: 1, g: 0.9318118, b: 0, a: 0}
+  m_baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_position: {x: 1, y: 2}
 --- !u!65 &1471999793
 BoxCollider:
@@ -1948,7 +1948,7 @@ MonoBehaviour:
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
-  m_baseColor: {r: 1, g: 0.9318118, b: 0, a: 0}
+  m_baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_position: {x: 2, y: 2}
 --- !u!65 &1572661948
 BoxCollider:
@@ -2544,7 +2544,7 @@ MonoBehaviour:
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
-  m_baseColor: {r: 1, g: 0.9318118, b: 0, a: 0}
+  m_baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_position: {x: 0, y: 0}
 --- !u!1 &2267504347258284745
 GameObject:
