@@ -508,6 +508,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7816f77ac7cb65a468ebde620e34175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
+  m_figures:
+  - {fileID: 1147428515852055295, guid: 391116cfc4297184698b6f5105e19953, type: 3}
+  - {fileID: 2400007527918065112, guid: 2ff90e8298243fa4f82340d20ecd2bd4, type: 3}
+  m_offset: {x: 0, y: 1, z: 0}
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
@@ -637,6 +641,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7816f77ac7cb65a468ebde620e34175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
+  m_figures:
+  - {fileID: 1147428515852055295, guid: 391116cfc4297184698b6f5105e19953, type: 3}
+  - {fileID: 2400007527918065112, guid: 2ff90e8298243fa4f82340d20ecd2bd4, type: 3}
+  m_offset: {x: 0, y: 1, z: 0}
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
@@ -802,6 +810,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7816f77ac7cb65a468ebde620e34175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
+  m_figures:
+  - {fileID: 1147428515852055295, guid: 391116cfc4297184698b6f5105e19953, type: 3}
+  - {fileID: 2400007527918065112, guid: 2ff90e8298243fa4f82340d20ecd2bd4, type: 3}
+  m_offset: {x: 0, y: 1, z: 0}
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
@@ -931,6 +943,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7816f77ac7cb65a468ebde620e34175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
+  m_figures:
+  - {fileID: 1147428515852055295, guid: 391116cfc4297184698b6f5105e19953, type: 3}
+  - {fileID: 2400007527918065112, guid: 2ff90e8298243fa4f82340d20ecd2bd4, type: 3}
+  m_offset: {x: 0, y: 1, z: 0}
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
@@ -1299,6 +1315,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7816f77ac7cb65a468ebde620e34175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
+  m_figures:
+  - {fileID: 1147428515852055295, guid: 391116cfc4297184698b6f5105e19953, type: 3}
+  - {fileID: 2400007527918065112, guid: 2ff90e8298243fa4f82340d20ecd2bd4, type: 3}
+  m_offset: {x: 0, y: 1, z: 0}
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
@@ -1428,6 +1448,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7816f77ac7cb65a468ebde620e34175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
+  m_figures:
+  - {fileID: 1147428515852055295, guid: 391116cfc4297184698b6f5105e19953, type: 3}
+  - {fileID: 2400007527918065112, guid: 2ff90e8298243fa4f82340d20ecd2bd4, type: 3}
+  m_offset: {x: 0, y: 1, z: 0}
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
@@ -1816,6 +1840,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7816f77ac7cb65a468ebde620e34175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
+  m_figures:
+  - {fileID: 1147428515852055295, guid: 391116cfc4297184698b6f5105e19953, type: 3}
+  - {fileID: 2400007527918065112, guid: 2ff90e8298243fa4f82340d20ecd2bd4, type: 3}
+  m_offset: {x: 0, y: 1, z: 0}
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
@@ -1945,6 +1973,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7816f77ac7cb65a468ebde620e34175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
+  m_figures:
+  - {fileID: 1147428515852055295, guid: 391116cfc4297184698b6f5105e19953, type: 3}
+  - {fileID: 2400007527918065112, guid: 2ff90e8298243fa4f82340d20ecd2bd4, type: 3}
+  m_offset: {x: 0, y: 1, z: 0}
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
@@ -2541,6 +2573,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7816f77ac7cb65a468ebde620e34175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
+  m_figures:
+  - {fileID: 1147428515852055295, guid: 391116cfc4297184698b6f5105e19953, type: 3}
+  - {fileID: 2400007527918065112, guid: 2ff90e8298243fa4f82340d20ecd2bd4, type: 3}
+  m_offset: {x: 0, y: 1, z: 0}
   m_colors:
   - {r: 1, g: 0, b: 0.047945976, a: 0}
   - {r: 0, g: 0.100815535, b: 1, a: 0}
